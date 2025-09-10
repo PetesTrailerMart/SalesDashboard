@@ -167,6 +167,53 @@
 		flex: 1;	 
 		height: auto; 
 		}
+
+		.btn-with-animation {
+			-moz-border-radius: 1px;      
+		-webkit-border-radius: 0px;      
+		background: #2596be;      
+		         
+		color: #FFFFFF;   
+		display: inline-block;      
+		font-family: Arial, Helvetica, sans-serif;      
+		font-size: 12px;      
+		font-weight: bold;      
+		height: 40px;      
+		margin: 10px;      
+		min-width: 180px;      
+		padding: 20px;      
+		text-align: center;   
+		flex-wrap:wrap;
+		justify-content: space-around;
+		flex: 1;	 
+		height: auto;
+
+		border: 1px;   
+		animation: blinking-border 1.5s infinite;
+		}
+
+		@keyframes blinking-border {
+  0% {
+    border: 3px solid red;
+    box-shadow: 0 0 5px red;
+  }
+  25% {
+    border: 3px solid orange;
+    box-shadow: 0 0 10px orange;
+  }
+  50% {
+    border: 3px solid yellow;
+    box-shadow: 0 0 10px yellow;
+  }
+  75% {
+    border: 3px solid lime;
+    box-shadow: 0 0 10px lime;
+  }
+  100% {
+    border: 3px solid red;
+    box-shadow: 0 0 5px red;
+  }
+}
 		
 		.btn:hover {
 		background: linear-gradient(#0d3157, #6295cc); 
@@ -176,7 +223,15 @@
 		text-decoration: none;
 		cursor: pointer;
 		}
-		
+
+		.btn-with-animation:hover {
+		background: linear-gradient(#0d3157, #6295cc); 
+		font-weight: bold; 
+		background-position: right center;  
+		color: #fff;
+		text-decoration: none;
+		cursor: pointer;
+		}
 		 
 		.data-container {
 			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -375,7 +430,7 @@
                   <button type="button button1" class="btn" onclick="window.open('https://c0hct975.caspio.com/dp/a76ca000616a92f7eb714b2fb0b5');"><i class="fa-solid fa-file-excel"></i> Sales Log</button>
                   <button type="button button1" class="btn" onclick="window.open('https://c0hct975.caspio.com/dp/a76ca00086af269fedbe4f209b13');"><i class="fa-solid fa-xmark"></i> Cancel Deal</button>  
 		  <button type="button button1" class="btn" onclick="window.open('https://c0hct975.caspio.com/dp/a76ca0009d57076210494988a441');"><i class="fa-solid fa-file-excel"></i> Consignment Report</button>  
-				   <button type="button button1" class="btn" onclick="window.open('https://c0hct975.caspio.com/dp/a76ca0001febe18baa1f43e69062');"><i class="fa-solid fa-file-excel"></i> External Show Log</button>  
+				   <button type="button button1" class="btn-with-animation" onclick="window.open('https://c0hct975.caspio.com/dp/a76ca0001febe18baa1f43e69062');"><i class="fa-solid fa-file-excel"></i> External Show Log</button>  
 		  <button type="button button1" class="btn" onclick="window.open('https://c0hct975.caspio.com/dp/a76ca00078e79ce82d4147cd9b70');"><i class="fa-solid fa-file-excel"></i> BDC Post-Orientation Survey Report</button>  
                </div>
             </div>
@@ -413,5 +468,6 @@
 	</script>
 </body>
 </html>
+
 
 
